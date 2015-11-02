@@ -62,6 +62,12 @@ namespace Google.Maps.Places
 		/// </summary>
 		[JsonProperty("matched_substrings")]
 		public SubstringMatch[] MatchedSubstrings { get; set; }
+
+        /// <summary>
+        /// Is a textual identifier that uniquely identifies a place.
+        /// </summary>
+        [JsonProperty("place_id")]
+        public string PlaceId { get; set; }
 	}
 
 	public class AutocompleteTerm
